@@ -91,12 +91,12 @@ export default function NewWatch() {
     <StyledWrapper>
       <div className="block">
         <button onClick={handleNewBrowsing} className="start">
-          <img src="https://static.nicegoodthings.com/works/vera/vera.logo.white.png" alt="vera icon" className="icon" />
+          <img src="https://static.nicegoodthings.com/works/vera/vera.logo.white.png" alt="workspace icon" className="icon" />
           <span className="txt">{video ? 'Start a New Cowatching Session' : 'Start a New Cobrowsing Session'}</span>
         </button>
         {!video && <div className="tip">To start a new cowatching session, please reopen Vera on a video’s page.</div>}
 
-        <a href="https://webrow.se/vera/#howto" target="_blank" className="link">Learn How It Works</a>
+        <a href="https://webrow.se/workspace/#howto" target="_blank" className="link">Learn How It Works</a>
       </div>
     </StyledWrapper>
   )

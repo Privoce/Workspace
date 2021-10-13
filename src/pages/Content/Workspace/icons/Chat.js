@@ -1,5 +1,5 @@
 export default function Chat() {
-  let color = `var(--vera-theme-color)`;
+  let color = `var(--workspace-theme-color)`;
 
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

@@ -44,7 +44,6 @@ var options = {
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.js'),
     background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
     contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
-    veraLanding: path.join(__dirname, 'src', 'pages', 'Content', 'vera.landing.js'),
     catchInviteId: path.join(__dirname, 'src', 'pages', 'Content', 'catchInviteId.js'),
     login: path.join(__dirname, 'src', 'pages', 'Login', 'index.js'),
     // devtools: path.join(__dirname, 'src', 'pages', 'Devtools', 'index.js'),

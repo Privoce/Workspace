@@ -17,7 +17,7 @@
     [
       "babel-plugin-styled-components",
       {
-        "namespace": "vera"
+        "namespace": "workspace"
       }
     ],
     "@babel/plugin-syntax-dynamic-import",

@@ -1,7 +1,7 @@
 // import React from 'react';
 
 export default function Copy() {
-  let color = `var(--vera-theme-color)`
+  let color = `var(--workspace-theme-color)`
   return (
     <svg width="30" height="29" viewBox="0 0 30 29" fill="none" >
       <g clipPath="url(#clip0)">

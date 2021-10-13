@@ -1,5 +1,5 @@
 export default function Cursor({ enable = true }) {
-  let color = enable ? `var(--vera-theme-color)` : `var(--vera-control-disable-color)`;
+  let color = enable ? `var(--workspace-theme-color)` : `var(--workspace-control-disable-color)`;
 
   return (
     <svg width="10" height="16" viewBox="0 0 10 16" fill="none" >

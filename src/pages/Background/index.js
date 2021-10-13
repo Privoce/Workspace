@@ -1,6 +1,6 @@
 
 import './message-events';
-import './vera-room';
+import './workspace-room';
 // 安装扩展触发的事件
 chrome.runtime.onInstalled.addListener(function (details) {
   const { reason } = details;

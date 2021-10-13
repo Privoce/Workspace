@@ -81,16 +81,6 @@
         "/catchInviteId.bundle.js"
       ],
       "run_at": "document_start"
-    },
-    {
-      "matches": [
-        "https://*.webrow.se/vera/*",
-        "http://localhost/vera/*"
-      ],
-      "js": [
-        "/veraLanding.bundle.js"
-      ],
-      "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [

@@ -17,9 +17,9 @@ const useDarkTheme = () => {
   useEffect(() => {
     let PANEL = document.querySelector('#PORTAL_VERA_PANEL');
     if (dark) {
-      PANEL.classList.add('vera-dark-theme');
+      PANEL.classList.add('workspace-dark-theme');
     } else {
-      PANEL.classList.remove('vera-dark-theme');
+      PANEL.classList.remove('workspace-dark-theme');
     }
     chrome.storage.local.set({ DARK_MODE: dark });
   }, [dark]);
