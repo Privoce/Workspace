@@ -1,0 +1,67 @@
+{
+  "extName": {
+    "message": "Vera - Co-navegar Doc, Figma, PDF.",
+    "description": "Portal name"
+  },
+  "extDescription": {
+    "message": "¡Navega por cualquier sitio web con tus compañeras de equipo!",
+    "description": "Portal description"
+  },
+  "login": {
+    "message": "Login"
+  },
+  "logout": {
+    "message": "Logout"
+  },
+  "tipLoading": {
+    "message": "Loading"
+  },
+  "tipDisableVideo": {
+    "message": "desabilitar câmera"
+  },
+  "tipDisableAudio": {
+    "message": "desabilitar áudio"
+  },
+  "tipRemoveBg": {
+    "message": "Remover imagem de fundo"
+  },
+  "tipPin": {
+    "message": "alfinete"
+  },
+  "tipSendFeedback": {
+    "message": "发送反馈"
+  },
+  "tipFeedback": {
+    "message": "comentários"
+  },
+  "tipProcessing": {
+    "message": "Em processamento"
+  },
+  "tipNext": {
+    "message": "Next View"
+  },
+  "tipPrev": {
+    "message": "Prev View"
+  },
+  "copy": {
+    "message": "Copiar link"
+  },
+  "copied": {
+    "message": "Copiado"
+  },
+  "invite": {
+    "message": "Convite"
+  },
+  "invited": {
+    "message": "Convidado"
+  },
+  "join": {
+    "message": "Entrar"
+  },
+  "prepare": {
+    "message": "prepare"
+  },
+  "quitConfirm": {
+    "message": "Tem certeza que deseja sair?"
+  }
+}

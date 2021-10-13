@@ -1,0 +1,75 @@
+{
+  "name": "workspace",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": "Tristan",
+  "license": "MIT",
+  "scripts": {
+    "build": "node utils/build.js",
+    "build:production": "export PRODUCTION=true && npm run build",
+    "start": "node utils/webserver.js",
+    "postinstall": "husky install"
+  },
+  "browserslist": {
+    "production": [
+      ">98%"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@authing/native-js-ui-components": "^2.4.52",
+    "@wbet/message-api": "^1.0.14",
+    "buffer": "^6.0.3",
+    "cssprefix": "^2.0.17",
+    "framer-motion": "^4.1.17",
+    "html-loader": "^2.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-shadow": "^19.0.2",
+    "socket.io-client": "^4.2.0",
+    "styled": "^1.0.0",
+    "styled-components": "^5.3.1",
+    "swr": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@hot-loader/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-named-asset-import": "^0.3.7",
+    "babel-plugin-styled-components": "^1.13.2",
+    "babel-preset-react-app": "^10.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fs-extra": "^10.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "mini-css-extract-plugin": "^2.4.2",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "prettier": "^2.4.1",
+    "react-hot-loader": "^4.13.0",
+    "react-refresh": "^0.10.0",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^3.3.0",
+    "svg-url-loader": "^7.1.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "workspace-api-for-chrome": "^2.3.1"
+  }
+}

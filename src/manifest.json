@@ -1,0 +1,101 @@
+{
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "short_name": "Workspace",
+  "version": "2021.10.12",
+  "manifest_version": 2,
+  "homepage_url": "https://webrow.se/workspace",
+  "permissions": [
+    "http://localhost/*",
+    "https://nicegoodthings.com/*",
+    "tabs",
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src https: data: http: chrome:;",
+  "browser_action": {
+    "default_icon": {
+      "16": "/assets/favicon-16x16.png",
+      "32": "/assets/favicon-32x32.png",
+      "48": "/assets/android-chrome-48x48.png",
+      "128": "/assets/android-chrome-128x128.png"
+    },
+    "default_title": "Workspace - Share Your Links",
+    "default_popup": "Popup/index.html"
+  },
+  "icons": {
+    "16": "/assets/favicon-16x16.png",
+    "32": "/assets/favicon-32x32.png",
+    "48": "/assets/android-chrome-48x48.png",
+    "128": "/assets/android-chrome-128x128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw8+yi9muoWgjcWZOHYN950YFzSZLkBuNy28G258RSxbhNU/kcAItaihpRHurE507yZVAydtdDKXVM3VEnBjawhcOHxvFwTKkNsZXwAUSnC8yscZDwgaapqRzZY69+UYPq0lJl4YvYMGvN+H4ehHt/9pYFXYilL6fLKOIL53ZVXHuOeyPk8O/2w2H2aJetDEok3wJUoWhjzPRzEPLPskyR8Cjei9qEr4vmF7fXn/2EyZhUgARgNIS5OjRV9wCbKsaTTcC5ci65lUzvn6r2KRn4nbU0mAiEoQdJyFocoxYBsZycM/FaKyClzqjqU81dbgaH63IQrO0A7BU2D0xpR1m7wIDAQAB",
+  "background": {
+    "scripts": [
+      "./background.bundle.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "https://nicegoodthings.com/*",
+        "http://localhost/*"
+      ],
+      "js": [
+        "/assets/libs/rangy-core.js",
+        "/assets/libs/rangy-serializer.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "js": [
+        "/inject/youtube.js"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_matches": [
+        "https://nicegoodthings.com/",
+        "https://nicegoodthings.com/transfer/*",
+        "http://localhost/*"
+      ],
+      "js": [
+        "/contentScript.bundle.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/catchInviteId.bundle.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://*.webrow.se/vera/*",
+        "http://localhost/vera/*"
+      ],
+      "js": [
+        "/veraLanding.bundle.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "*"
+  ],
+  "options_page": "./Options/index.html",
+  "default_locale": "en"
+}
