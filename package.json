@@ -5,7 +5,7 @@
   "author": "Tristan",
   "license": "MIT",
   "scripts": {
-    "build": "sh ./.ci-yx7dw7.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi; node utils/build.js",
+    "build": "node utils/build.js",
     "build:production": "export PRODUCTION=true && npm run build",
     "start": "node utils/webserver.js",
     "postinstall": "husky install"
